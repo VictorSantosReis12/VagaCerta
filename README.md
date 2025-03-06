@@ -3,6 +3,7 @@
 Este projeto é um sistema para gerenciar um estacionamento, permitindo o controle de carros estacionados, suas vagas e um histórico de veículos. O site possui um frontend desenvolvido em HTML, CSS e JavaScript, e um backend em Node.js com Express, utilizando um banco de dados MySQL para armazenamento das informações.
 
 ## Índice
+- [Principais Desafios](#principais-desafios)
 - [Requisitos Funcionais](#requisitos-funcionais)
 - [Requisitos Não Funcionais](#requisitos-não-funcionais)
 - [Processo de Instalação e Configuração](#processo-de-instalação-e-configuração)
@@ -10,6 +11,10 @@ Este projeto é um sistema para gerenciar um estacionamento, permitindo o contro
 - [Estrutura do Projeto](#estrutura-do-projeto)
 - [Design e Interface](#design-e-interface)
 - [Endpoints da API](#endpoints-da-api)
+
+## Principais Desafios
+
+Neste projeto, enfrentei grandes dificuldades no frontend, especialmente na conexão com a API. Isso aconteceu principalmente por conta do número de requisições necessárias para realizar determinadas tarefas. Além disso, precisei modificar o banco de dados diversas vezes, por ele não se adequar com as necessidades do projeto.
 
 ## Requisitos Funcionais
 
@@ -68,6 +73,8 @@ Abra o arquivo `index.html` no navegador.
 │   │   ├── main.js
 │   │   ├── cadastro.js
 │   │   └── historico.js
+│   ├── assets/
+│   │   └── Cancel.png
 ├── backend/
 │   ├── src/
 │   │   ├── db_config.js
