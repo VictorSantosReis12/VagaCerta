@@ -5,7 +5,7 @@ Este projeto é um sistema para gerenciar um estacionamento, permitindo o contro
 ## Índice
 - [Requisitos Funcionais](#requisitos-funcionais)
 - [Requisitos Não Funcionais](#requisitos-não-funcionais)
-- [Processo de Instalação e Configuração](#instalacao-e-configuracao)
+- [Processo de Instalação e Configuração](#processo-de-instalação-e-configuração)
 - [Como Usar](#como-usar)
 - [Estrutura do Projeto](#estrutura-do-projeto)
 - [Design e Interface](#design-e-interface)
@@ -35,7 +35,7 @@ Este projeto é um sistema para gerenciar um estacionamento, permitindo o contro
 2. Instale as dependências necessárias do backend:
    ```sh
    cd backend
-   npm i
+   npm install
    ```
 3. Configure o banco de dados MySQL utilizando o script disponível em `backend/db.sql`.
 4. Ajuste as credenciais de conexão do banco de dados no arquivo `backend/src/db_config.js`.
