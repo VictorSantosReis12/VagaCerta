@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta charset="UTF-8">
+    <title>Home - Estacionamento de Carros</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inder&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montagu+Slab:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../CSS/style.css">
+</head>
+
+<body>
+    <header>
+        <h1 id="titulo-header">VagaCerta</h1>
+    </header>
+
+    <main>
+        <section id="nav">
+            <a href="index.html" class="nav-item">Lista de Carros</a>
+            <a href="#" class="nav-item" id="nav-selecionada">Cadastro de Carros</a>
+            <a href="historico.html" class="nav-item">Histórico</a>
+        </section>
+        <form id="form-carro">
+            <div class="titulo-form-div">
+                <hr class="linha-cadastro">
+                <h3 class="titulo-form">Informações do Carro</h3>
+                <hr class="linha-cadastro">
+            </div>
+            <div id="caixa-carro">
+                <div id="caixa1">
+                    <label for="placa">Placa do Veículo</label>
+                    <input type="text" name="placa" id="placa" maxlength="7" required>
+                </div>
+                <div id="caixa2">
+                    <label for="marca">Marca</label>
+                    <input type="text" name="marca" id="marca" required>
+                </div>
+                <div id="caixa3">
+                    <label for="modelo">Modelo</label>
+                    <input type="text" name="modelo" id="modelo" required>
+                </div>
+                <div id="caixa4">
+                    <label for="cor">Cor</label>
+                    <input type="text" name="cor" id="cor" required>
+                </div>
+            </div>
+            <div class="titulo-form-div">
+                <hr class="linha-cadastro">
+                <h3 class="titulo-form">Registro de Vaga</h3>
+                <hr class="linha-cadastro">
+            </div>
+            <div id="caixa-vaga">
+                <div id="caixa5">
+                    <label for="setor">Setor</label>
+                    <select class="select-vaga" id="setor" name="setor" required> <!-- Select para listar os setores -->
+                        <option value="" disabled selected>Selecione uma opção</option>
+                    </select>
+                    </div>
+                <div id="caixa6">
+                    <label for="vaga">Vaga</label>
+                    <select class="select-vaga" id="vaga" name="vaga" required> <!-- Select para listar as vagas --></select>
+                </div>
+                <div id="caixa7">
+                    <input type="checkbox" name="especial" id="especial">
+                    <label for="especial">Vaga Especial</label>
+                </div>
+            </div>
+            <div id="caixa-botao">
+                <div id="caixa8">
+                    <button id="botao-confirmar">Confirmar</button>
+                </div>
+            </div>
+        </form>
+    </main>
+
+    <script src="../JS/cadastro.js"></script>
+</body>
+
+</html>

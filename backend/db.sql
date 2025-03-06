@@ -1,0 +1,34 @@
+CREATE DATABASE estacionamento_carro;
+USE estacionamento_carro;
+
+CREATE TABLE Vagas (
+	idVaga INT PRIMARY KEY AUTO_INCREMENT,
+    setor VARCHAR(1) NOT NULL,
+    numero INT NOT NULL,
+    isEspecial BOOLEAN NOT NULL,
+    isOcupada BOOLEAN NOT NULL
+);
+
+CREATE TABLE Carros (
+	idCarro INT PRIMARY KEY AUTO_INCREMENT,
+    placaVeiculo VARCHAR(7) NOT NULL,
+    marca VARCHAR(100) NOT NULL,
+    modelo VARCHAR(100) NOT NULL,
+    cor VARCHAR(100) NOT NULL,
+    dataEntrada TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    idVaga INT NOT NULL,
+	FOREIGN KEY (idVaga) REFERENCES Vagas(idVaga) ON DELETE CASCADE
+);
+
+CREATE TABLE Historico (
+	idHistorico INT PRIMARY KEY AUTO_INCREMENT,
+    numero VARCHAR(2) NOT NULL,
+    setor VARCHAR(1) NOT NULL,
+    isEspecial BOOLEAN NOT NULL,
+    placaVeiculo VARCHAR(7) NOT NULL,
+    marca VARCHAR(100) NOT NULL,
+    modelo VARCHAR(100) NOT NULL,
+    cor VARCHAR(100) NOT NULL,
+    dataEntrada TIMESTAMP,
+    dataSaida TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);

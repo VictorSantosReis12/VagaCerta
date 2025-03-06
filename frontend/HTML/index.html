@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta charset="UTF-8">
+    <title>Home - Estacionamento de Carros</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inder&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montagu+Slab:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../CSS/style.css">
+</head>
+
+<body>
+    <header>
+        <h1 id="titulo-header">VagaCerta</h1>
+    </header>
+
+    <main>
+
+        <section id="nav">
+            <a href="#" class="nav-item" id="nav-selecionada">Lista de Carros</a>
+            <a href="cadastro.html" class="nav-item">Cadastro de Carros</a>
+            <a href="historico.html" class="nav-item">Histórico</a>
+        </section>
+
+        <section id="barra-lista">
+            <section id="legenda">
+                <h6>Vaga</h6>
+                <hr class="linha-legenda">
+                <h6>Classificação</h6>
+                <hr class="linha-legenda">
+                <h6>Status</h6>
+                <hr class="linha-legenda">
+                <h6>Placa</h6>
+                <hr class="linha-legenda">
+                <h6>Marca</h6>
+                <hr class="linha-legenda">
+                <h6>Modelo</h6>
+                <hr class="linha-legenda">
+                <h6>Cor</h6>
+                <hr class="linha-legenda">
+                <h6>Hora de Entrada</h6>
+            </section>
+            <select name="setor" id="filtro-setor"></select>
+        </section>
+
+        <section id="blur"></section>
+
+        <section id="editar-carro">
+            <h4 id="titulo-editar-carro">Editar Carro</h4>
+            <img src="../assets/Cancel.png" alt="Cancel" id="cancel"  onclick="fecharTelaEditar()">
+            <form id="form-editar-carro"></form>
+                <input type="hidden" id="id-carro">
+                <input type="hidden" id="id-vaga">
+                <div id="caixa-editar-carro">
+                    <div id="caixa-editar-1">
+                        <label for="placa">Placa do Veículo</label>
+                        <input type="text" name="placa" id="placa-editar" maxlength="7" required>
+                    </div>
+                    <div id="caixa-editar-2">
+                        <label for="marca">Marca</label>
+                        <input type="text" name="marca" id="marca-editar" required>
+                    </div>
+                    <div id="caixa-editar-3">
+                        <label for="modelo">Modelo</label>
+                        <input type="text" name="modelo" id="modelo-editar" required>
+                    </div>
+                    <div id="caixa-editar-4">
+                        <label for="cor">Cor</label>
+                        <input type="text" name="cor" id="cor-editar" required>
+                    </div>
+                </div>
+                <div id="caixa-editar-vaga">
+                    <div id="caixa-editar-5">
+                        <label for="setor">Setor</label>
+                        <select class="select-vaga-editar" id="setor-editar" name="setor" required> <!-- Select para listar os setores -->
+                            <option value="" disabled selected>Selecione uma opção</option>
+                        </select>
+                        </div>
+                    <div id="caixa-editar-6">
+                        <label for="vaga">Vaga</label>
+                        <select class="select-vaga-editar" id="vaga-editar" name="vaga" required> <!-- Select para listar as vagas -->
+                            <option value="" disabled selected>Selecione uma opção</option>
+                        </select>
+                    </div>
+                    <div id="caixa-editar-7">
+                        <input type="checkbox" name="especial" id="especial-editar">
+                        <label for="especial">Vaga Especial</label>
+                    </div>
+                    <div id="caixa-editar-8">
+                        <button id="botao-confirmar-editar" onclick="editarCarro()">Editar</button>
+                    </div>
+            </form>
+        </section>
+
+        <section id="lista"></section>
+
+    </main>
+
+    <script src="../JS/main.js"></script>
+</body>
+
+</html>
