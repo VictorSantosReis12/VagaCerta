@@ -5,7 +5,7 @@ Este projeto é um sistema para gerenciar um estacionamento, permitindo o contro
 ## Índice
 - [Requisitos Funcionais](#requisitos-funcionais)
 - [Requisitos Não Funcionais](#requisitos-não-funcionais)
-- [Processo de Instalação e Configuração](#processo-de-instalacao-e-configuracao)
+- [Processo de Instalação e Configuração](#instalacao-e-configuracao)
 - [Como Usar](#como-usar)
 - [Estrutura do Projeto](#estrutura-do-projeto)
 - [Design e Interface](#design-e-interface)
